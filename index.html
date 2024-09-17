@@ -1,835 +1,846 @@
+
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
-    <head>
-        <!-- meta data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- ####### bootstrap ###### -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!--font-family-->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
-        
-        <!-- title of site -->
-        <title>Portfolio_Anuja</title>
+    <!-- ########### linked files ############# -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/mediaq.css">
+    <link rel="stylesheet" href="./assets/css/utility.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Sapna - A Web Developer</title>
+</head>
 
-        <!-- For favicon png -->
-		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
-       
-        <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+<body>
+    <!-- ######### HTML FOR HEADER & HERO SECTION STARTS HERE ######## -->
 
-		<!--flat icon css-->
-		<link rel="stylesheet" href="assets/css/flaticon.css">
 
-		<!--animate.css-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+    <header class="header" id="home">
+        <section class="navigation" id="mainnavbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-transparent mainnavbar">
+                            <a class="navbar-brand" href="index.html"> Sapna Bhosikar</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation" id="togglenav">
+                                <i class="fa-solid fa-bars" id="hide"></i>
+                                <i class="fa-solid fa-xmark d-none" id="show"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav text-uppercase ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about" onclick="scrollToSection('about')">about</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#work" onclick="scrollToSection('work')">work</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#skills"
+                                            onclick="scrollToSection('skills')">skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#projects"
+                                            onclick="scrollToSection('projects')">projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact"
+                                            onclick="scrollToSection('contact')">contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="assets/css/style.css">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="assets/css/responsive.css">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
-    </head>
-	
-	<body>
-		<!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-		
-		<!-- top-area Start -->
-		<header class="top-area">
-			<div class="header-area">
-				<!-- Start Navigation -->
-			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+        <section class="intro h-50" data-aos="fade-down">
+            <div class="container h-100">
+                <div class="row h-100 mt-5">
+                    <div class="col-lg-7 col-xl-8 order-1 order-xl-0 d-flex justify-content-center flex-column">
+                        <div class="mainTitle">
+                            <p>hello! i'm,</p>
+                            <p> Sapna Bhosikar</p>
+                            <div class="txtcontent">
+                                <div class="normaltxt text-white mr-2 mr-sm-3">I'm a</div>
 
-			        <div class="container">
+                                <ul class="changetxt">
+                                    <li>angular developer</li>
+                                    <li>front end UI developer</li>
+                                </ul>
 
-			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">Anuja . Bhosle</a>
-			            </div><!--/.navbar-header-->
-			            <!-- End Header Navigation -->
-
-			            <!-- Collect the nav links, forms, and other content for toggling -->
-			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
-			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-			                <li class=" smooth-menu active"></li>
-			                    <li class=" smooth-menu"><a class="nav-link" href="#about" onclick="scrollToSection('about')">about</a>
-								</li>
-			                    <li class="smooth-menu"><a class="nav-link" href="#work" onclick="scrollToSection('work')">work</a>
-								</li>
-			                    <li class="smooth-menu"><a class="nav-link" href="#skills"
-									onclick="scrollToSection('skills')">skills</a></li>
-			                    <li class="smooth-menu"><a class="nav-link" href="#projects"
-									onclick="scrollToSection('projects')">projects</a></li>
-			                    <li class="smooth-menu"><a class="nav-link" href="#contact"
-									onclick="scrollToSection('contact')">contact</a></li>
-			                </ul><!--/.nav -->
-			            </div><!-- /.navbar-collapse -->
-			        </div><!--/.container-->
-			    </nav><!--/nav-->
-			    <!-- End Navigation -->
-			</div><!--/.header-area-->
-
-		    <div class="clearfix"></div>
-
-		</header><!-- /.top-area-->
-		<!-- top-area End -->
-	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> Anuja  <span>.</span>   </h2>
-							<p> Angular developer</p>
-							<div class="contact-btn">
-                                <a class="btn" href="assets/images/Anuja_Bhosle_Angular_Developer_3+yoe.pdf" target="_blank">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="contact-btn">
+                                <a class="btn" href="assets/images/3+ Years_Exp_Sapna_Bhosikar_Angular_Developer.pdf" target="_blank">
                                     Download CV
                                 </a>
                             </div>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-4 d-flex flex-column align-items-center justify-content-center">
+                        <ul class="social-connect">
+                            <li>
+                                <a href="https://www.linkedin.com/in/sapna-bhosikar" target="_blank">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Bhosikarsapna?tab=repositories" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <figure class="info-img photo">
+                            <img src="assets/images/sapna.jpeg"img-responsive"
+                                alt=" Sapna Bhosikar" title=" Sapna Bhosikar">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </header>
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
 
-		<!--about start -->
-		<section id="about" class="about">
-			<div class="section-heading text-center">
-				<h2>about me</h2>
-			</div>
-			<div class="container">
-				<div class="about-content">
-					<div class="row">
-						<div class="col-sm-6">
-							<div class="single-about-txt">
-								<h3>
-									Hi there! I'm Anuja Bhosle, <br>
-								a passionate Front End Developer based in Latur, India.
-								</h3>
-								<p>
-									
+
+
+
+    <!-- ######### HTML FOR ABOUT SECTION STARTS HERE ######## -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row" data-aos="fade-right">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <h2 class="text-capitalize">
+                            about
+                            <span>
+                                me
+                            </span>
+                        </h2>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="about-info">
+                                <h3 class="mb-3">
+                                    Hi there! I'm  Sapna Bhosikar, <br>
+                                    a passionate Front End Developer based in Nanded, India
+                                </h3>
+                                <ul>
+                                    <li>
                                         I'm a Front End Developer who thrives on solving complex problems and turning
                                         ideas into reality.
-                                        I bring 3+ years of experience to the table and genuine love for what i do.
-                                    
+                                        I bring 2.8+ years of experience to the table and genuine love for what i do.
+                                    </li>
+                                    <li>
                                         I'm known for my strong understanding of Angular Framework and
                                         html/css/javascript as they are fundamental to web development & angular.
-                                    
+                                    </li>
+                                    <li>
                                         Knowledge of responsive web design using css framework like Bootsrap & Angular
                                         Material.
-                                    
+                                    </li>
+                                    <li>
                                         Experience working in Agile Methodologies, participating in sprint planning.
-                                    
+                                    </li>
+                                    <li>
                                         I'm truly passionate about the opportunity to create delightful user experience.
-                                    
+                                    </li>
+                                    <li>
                                         I'm constantly motivated by the ever-evolving nature of web technologies,
                                         solving complex problems, innovation and creativity in my field.
-                                    
+                                    </li>
+                                    <li>
                                         Love working with diverse teams to achieve common goals and commited to
                                         delivering high quality results and exceeding expectation.
-                                    
+                                    </li>
+                                    <li>
                                         I'm always interested in new opportunities, collaborations and networking.
                                         Please feel free to
                                         <a href="#contact">
                                             contact me
                                         </a>
-								</p>
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>phone</h3>
-											<p>751-798-6692</p>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-about-add-info">
-											<h3>email</h3>
-											<p>anujabhosle28@gmail.com</p>
-										</div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/images/Anuja_bhosle.jpeg" alt="profile_image">
-								<div class="about-list-icon">
-									<ul>
-										<li>
-											<a href="https://www.linkedin.com/in/anuja-bhosle-a8066230a/" target="_blank">
-												<i class=" fa fa-brands fa-linkedin" aria-hidden="true"></i>
-											</a>
-										</li><!-- / li -->
-										<li>
-											<a href="https://github.com/anuja7517" target="_blank">
-												<i class=" fa fa-brands fa-github"></i>
-											</a>
-											
-										</li><!-- / li -->
-										
-										
-										
-									</ul><!-- / ul -->
-								</div><!-- /.about-list-icon -->
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</section><!--/.about-->
-		<!--about end -->
-		
-	
-<!-- work start -->
-
-<section class="work" id="work">
-	<div class="container">
-		<div class="row">
-
-			<div class="col col-12 col-md-6" data-aos="fade-right">
-				<header class="title mt-4 mt-md-0">
-					<h2>WORK EXPERIENCE</h2>
-				</header>
-				<div class="contents">
-					<div class="box">
-						<h4>2022 - Present</h4>
-						<h3>Gdigit infotech</h3>
-						<p>Front-End Angular Developer.
-						<ul>
-							<li>Led the front-end development for an E-commerce domain, ensuring a seamless and
-								user-friendly experience. The major services include sales of electrical accessories
-								like transformers, solar panels, motors and batteries.</li>
-							<li>Implemented responsive web design techniques to ensure that the e-commerce website
-								functions well across various devices and screen sizes, providing a consistent user
-								experience on desktops, tablets, and smartphones.
-							</li>
-							<li>
-								Created different modules, components, pipes and directives in Angular as per
-								business requirements.
-							</li>
-						</ul>
-					</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-					<div class="box">
-						<h4>2022-present</h4>
-						<h3>Gdigit infotech</h3>
-						<p>Front End UI Developer. (Experience)</p>
-						<ul>
-							<li>Converted PSD into responsive HTML using Bootstrap 3.</li>
-							<li>As a Front End UI Developer Developed application for both desktop and mobile
-								operating systems and Fixing issues raised by team.</li>
-							<li>
-								Created interactions using JavaScript and also used jQuery Plugins.
-							</li>
-							<li>
-								Kept up-to-date with the latest trends and advancements in Angular and web
-								development to continuously
-								improve skills and knowledge.
-							</li>
-						</ul>
-					</div>
 
 
-				</div>
-			</div>
-
-			<div class="col col-12 col-md-6" data-aos="fade-right">
-				<header class="title">
-					<h2>EDUCATION</h2>
-				</header>
-				<div class="contents">
-					<div class="box">
-						<h4>2022-appearing</h4>
-						<h3>Bachelor's of Science  </h3>
-						<p>
-						   Shivaji Mahavidyaylay ,udgir
-						</p>
-						<ul>
-							<li>Completed Batchelor's with current CGPA of <strong>8.06</strong>, Grade :
-								<strong>O</strong>.
-							</li>
-							<li>Along with my degree, completed basic computer courses like 
-								and FrontEnd Languages such as HTML5, CSS, JavaScript, TypeScript, Angular, Angular
-								Material,
-								Bootstrap,etc.
-							</li>
-						</ul>
-					</div>
-				</div>
-
-			</div>
 
 
-		</div>
-	</div>
-</section>
-
-<!-- work end -->
-
-		<!-- skill Start -->
-		<section class="skill" id="skills" data-aos="fade-right">
-			<div class="container">
-				<div class="row">
-	
-					<div class="col-12">
-						<div class="headers skill-head">
-							<h2>
-								My <span>Skills</span>
-							</h2>
-							<br>
-							<p>
-								Here is my skills to represent my Expertise
-							</p>
-						</div>
-					</div>
-	
-	
-				</div>
-				<div class="row">
-					<div class="col-12 mb-5">
-						<div class="experience-details-container">
-							<div class="about-containers">
-								<div class="details-container">
-									<h2 class="experience-sub-title">Technical Skills</h2>
-									<div class="article-container">
-	
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>HTML</h3>
-	
-											</div>
-										</article>
-	
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>CSS</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>JavaScript</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>TypeScript</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>Angular 10</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>Angular Material</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>SASS</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>Bootstrap4</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>Ajax</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>
-													jquery
-												</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>Flex</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>Html5</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>GIT</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>RxJs</h3>
-	
-											</div>
-										</article>
-										<article>
-											<img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
-												alt="Experience-icon" title="Experience-icon" class="icon">
-											<div>
-												<h3>Media Query</h3>
-	
-											</div>
-										</article>
-	
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<br>
-					
-				</div>
-	
-	
-			</div>
-		</section>
-
-		<!-- skill end -->
-<!-- projects start -->
-
-		 <section class="projects" id="projects" data-aos="fade-right">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 ">
-						<div class="headers skill-head">
-							<h2>
-								Latest <span>Projects</span>
-							</h2>
-							<br>
-							<p>
-								Your Vision, Our Expertise
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-
-					<div class="col-md-4">
-						<div class="project card mb-4">
-							<a href="https://asyn-await-fire-base.vercel.app/" target="_blank">
-								<div class="card-header">
-									<h4 class="m-0">CRUD APPLICATION</h4>
-								</div>
-								<div class="card-body">
-									<img src="https://media.istockphoto.com/id/2123170386/photo/hands-of-robot-and-human-touch-api-of-global-network-connection-integrating-systems-enabling.jpg?s=1024x1024&w=is&k=20&c=t-1-ZB0SpzSSfb3_oBmPa0cIz_k2qLIjW0ujLmNryNs="
-										alt="">
-								</div>
-								<div class="card-footer">
-									<p>create, read, update and delete
-										CRUD is an acronym from the world of computer programming and refers to the four functions considered necessary to implement a persistent storage application: create, read, update and delete.
-
-									</p>
-								</div>
-							</a>
-						</div>	
-					</div>
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://rxjs-mat-node-backened.vercel.app/" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">Angular Course</h4>
-									</div>
-									<div class="card-body">
-										<img src="https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png"
-											alt="Course" title="Course">
-									</div>
-									<div class="card-footer">
-										<p>Used FiresBase for DB, used HTTPclient for API, used Observable, used angular
-											material components like toolbar, sidenav, formfields, snackbar, dialogue,
-											button and card, used routing, Implemented edit and update.</p>
-									</div>
-								</a>
-</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://passenger-servicemat.vercel.app/" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">Passenger Task</h4>
-									</div>
-									<div class="card-body">
-										<!-- <img src="https://www.desktopbackground.org/download/o/2011/05/19/205586_ultra-hd-4k-aviation-wallpapers-hd-desktop-backgrounds-3840x2400_3840x2400_h.jpg"
-											alt="Airlines" title="Airlines"> -->
-										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBL7-jC_QZv2TLcOwgQXFoJMqUEhzXJryQGQ&s" alt="FoodBlog">
-
-									</div>
-									<div class="card-footer">
-										<p>Used dumy data and transfer data from one component to another component using
-											input and output created two different component for passenger list and
-											passenger cards.</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://netflix-clone-one-mauve.vercel.app/" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">Netflix Clone</h4>
-									</div>
-									<div class="card-body">
-										<img src="https://wallpapers.com/images/hd/netflix-background-6eijmcazwfrb9u6w.jpg"
-											alt="Netflix Clone" title="Netflix">
-									</div>
-									<div class="card-footer">
-										<p>Created by using basic HTML, CSS & JavaScript and used
-											jQuery-plugin(owl-Carousel.) with responsive using Media Queries used tmdb API
-											key to get trending movie data and tested in postman implemented in this
-											project.</p>
-	
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://b4-self.vercel.app/" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">Bootstrap4 Layout</h4>
-									</div>
-									<div class="card-body">
-										<img src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-3075993.jpg&fm=jpg"
-											alt="CityLand" title="CityLand">
-									</div>
-									<div class="card-footer">
-										<p>Created Multiple page layout using Bootstrap4, HTML, CSS & JavaScript and also
-											used Owl-Carousel with responsive using Media Queries.</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://http-materialfirebase2.vercel.app/posts" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">HttpMatFirebase</h4>
-									</div>
-									<div class="card-body">
-										<img src="https://img-b.udemycdn.com/course/750x422/5634404_ec85.jpg" alt="FoodBlog"
-											title="FoodBlog">
-									</div>
-									<div class="card-footer">
-										<p>Used firebase for post data and implemented CRUD used Angular Material components
-											also used Bootstrap4.</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://flex-movie-lay-out.vercel.app/" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">Flex Layout</h4>
-									</div>
-									<div class="card-body">
-										<img src="https://movie-layout-using-flex.vercel.app/assets/images/bollywood.png"
-											alt="">
-									</div>
-									<div class="card-footer">
-										<p>Created this Movie layout using flex, jQuery-plugin called LightBox with
-											responsive using Media Queries.</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://nature-layout-sass.vercel.app/" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">SASS Layout</h4>
-									</div>
-									<div class="card-body">
-										<img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
-											alt="">
-									</div>
-									<div class="card-footer">
-										<p>Created this layout Using SASS with animations & responsive using Media Queries.
-										</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card-columns allproject">
-							<div class="project card mb-4">
-								<a href="https://currencytask-five.vercel.app/" target="_blank">
-									<div class="card-header">
-										<h4 class="m-0">Currency  Converter</h4>
-									</div>
-									<div class="card-body">
-										<img src="https://media.istockphoto.com/id/2137618588/photo/indian-rupee-symbol-with-map-on-stock-market-chart-graph-background.jpg?s=1024x1024&w=is&k=20&c=Dfsgd8dQBmBeDyXOvp2gLAGJzV7bXD35AY4VjQOYgPg="
-											alt="">
-									</div>
-									<div class="card-footer">
-										<p>Done a currency converter application
-										</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	 
-		<!--  projects end -->
-
-	
-
-		<!--contact start -->
-		<section class="contact" id="contact">
-			<div class="container">
-				<div class="row">
-	
-					<div class="col-12 mb-5">
-						<div class="content text-center text-white">
-							<h2>Contact Me</h2><br>
-							<p>Let's Connect and Create Something Amazing Together!</p>
-						</div>
-					</div>
-					<br>
-	
-					<div class="col-12 col-md-6" data-aos="fade-right">
-						<div class="contactInfo">
-	
-							<div class="boxx">
-								<div class="icon">
-									<i class="fa-solid fa-address-card"></i>
-									
-								</div>
-								<div class="text">
-									<h3>Address</h3>
-									<p> Hindustani Colony , <br>
-										Methodis school  <br>
-										udgir, Latur, Maharashtra <br>
-										413517
-									</p>
-								</div>
-							</div>
-	
-							<div class="boxx">
-								<div class="icon">
-									<i class=" fa fa-solid fa-phone"></i>
-								</div>
-								<div class="text">
-									<h3>Phone</h3>
-									<p>
-										<a href="tel:+91 9637014535" target="_blank">+91 7517986692</a>
-									</p>
-								</div>
-							</div>
-	
-							<div class="boxx">
-								<div class="icon">
-									<i class=" fa fa-regular fa-envelope"></i>
-								</div>
-								<div class="text">
-									<h3>Email</h3>
-									<p>
-										<a href="mailto:anujabhosle28@gmail.com"
-											target="_blank">anujabhosle28@gmail.com</a>
-									</p>
-								</div>
-							</div>
-	
-						</div>
-					</div>
-	
-					<div class="col-12 col-md-6" data-aos="fade-right">
-						<div class="contactform">
-							<form>
-								<h2>Send Message</h2>
-								<div class="form-group">
-									<input type="text" name="" required class="form-control">
-									<span>Fullname</span>
-								</div>
-								<div class="form-group">
-									<input type="text" name="" required class="form-control">
-									<span>Email</span>
-								</div>
-								<div class="form-group">
-									<textarea type="text" name="" rows="4" required class="form-control"></textarea>
-									<span>Type your Message...</span>
-								</div>
-								<div class="form-group">
-									<input type="submit" name="" required value="Send" class="btn">
-								</div> 
-							</form>
-						</div>
-					</div>
-	
-				</div>
-			</div>
-		</section> 
-		<!--/.contact-->
-		<!--contact end -->
-
-		<!--footer-copyright start-->
-		<footer class="footer py-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 text-center">
-						<div class="socialIcons mb-2">
-							<a href="https://www.linkedin.com/in/anuja-bhosle-a8066230a/" target="_blank">
-								<i class=" fa fa-brands fa-linkedin" aria-hidden="true"></i>
-							</a>
-							
-							<a href="https://github.com/anuja7517" target="_blank">
-								<i class="fa fa-brands fa-github"></i>
-							</a>
-						</div>
-						<div class="footerbottom">
-							<p class="m-0">Copyright &copy;Anuja 2024. All Rights Reserved. Designed and Developed with
-								Passion.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="scroll-Top">
-				<div class="return-to-top">
-					<i class="fa fa-angle-up " id="scroll-top" ></i>
-				</div>
-				
-			</div>
-		</footer>
-		
-		<!--/.footer-copyright-->
-		<!--footer-copyright end-->
-		
-		<!-- Include all js compiled plugins (below), or include individual files as needed -->
-
-		<script src="assets/js/jquery.js"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="assets/js/bootstrap.min.js"></script>
-		
-		<!-- bootsnav js -->
-		<script src="assets/js/bootsnav.js"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="assets/js/jquery.sticky.js"></script>
-		
-		<!-- for progress bar start-->
-
-		<!-- progressbar js -->
-		<script src="assets/js/progressbar.js"></script>
-
-		<!-- appear js -->
-		<script src="assets/js/jquery.appear.js"></script>
-
-		<!-- for progress bar end -->
-
-		<!--owl.carousel.js-->
-        <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- ######### HTML FOR EDUCATION AND EXPERIENCE SECTION STARTS HERE ######## -->
 
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="assets/js/custom.js"></script>
-        
-    </body>
-	
+    <section class="work" id="work">
+        <div class="container">
+            <div class="row">
+
+                <div class="col col-12 col-md-6" data-aos="fade-right">
+                    <header class="title mt-4 mt-md-0">
+                        <h2>WORK EXPERIENCE</h2>
+                    </header>
+                    <div class="contents">
+                        <div class="box">
+                            <h4>May2022-May2024</h4>
+                            <h3>Gdigit infotech</h3>
+                            <p>Angular Developer. (Experience)</p>
+                            <ul>
+                                <li>Led the front-end development for an E-commerce domain, ensuring a seamless and
+                                    user-friendly experience. The major services include sales of electrical accessories
+                                    like transformers, solar panels, motors and batteries.</li>
+                                <li>Implemented responsive web design techniques to ensure that the e-commerce website
+                                    functions well across various devices and screen sizes, providing a consistent user
+                                    experience on desktops, tablets, and smartphones.
+                                </li>
+                                <li>
+                                    Created different modules, components, pipes and directives in Angular as per
+                                    business requirements.
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="box">
+                            <h4>April2021-April2022</h4>
+                            <h3>Gdigit infotech</h3>
+                            <p>Front End UI Developer. (Experience)</p>
+                            <ul>
+                                <li>Converted PSD into responsive HTML using Bootstrap 3.</li>
+                                <li>As a Front End UI Developer Developed application for both desktop and mobile
+                                    operating systems and Fixing issues raised by team.</li>
+                                <li>
+                                    Created interactions using JavaScript and also used jQuery Plugins.
+                                </li>
+                                <li>
+                                    Kept up-to-date with the latest trends and advancements in Angular and web
+                                    development to continuously
+                                    improve skills and knowledge.
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col col-12 col-md-6" data-aos="fade-right">
+                    <header class="title">
+                        <h2>EDUCATION</h2>
+                    </header>
+                    <div class="contents">
+                        <div class="box">
+                            <h4>2021</h4>
+                            <h3>Bachelor's of Technology  </h3>
+                            <p>
+                               Matoshree Pratishthan Group of Institute
+                            </p>
+                            <ul>
+                                <li>Completed Bachelor's with current CGPA of <strong>8.5</strong>, Grade :
+                                    <strong>O</strong>.
+                                </li>
+                                <li>Along with my degree, completed basic computer courses like 
+                                    and FrontEnd Languages such as HTML5, CSS, JavaScript, TypeScript, Angular, Angular
+                                    Material,
+                                    Bootstrap,etc.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ######### HTML FOR SKILLS SECTION STARTS HERE ######## -->
+
+    <section class="skill" id="skills" data-aos="fade-right">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="headers skill-head">
+                        <h2>
+                            My <span>Skills</span>
+                        </h2>
+                        <p>
+                            Here is my skills to represent my Expertise
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="experience-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <h2 class="experience-sub-title">Technical Skills</h2>
+                                <div class="article-container">
+
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>HTML</h3>
+
+                                        </div>
+                                    </article>
+
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>CSS</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>JavaScript</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>TypeScript</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>Angular 10</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>Angular Material</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>SASS</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>Bootstrap4</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>Ajax</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>
+                                                jquery
+                                            </h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>Flex</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>Html5</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>GIT</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>RxJs</h3>
+
+                                        </div>
+                                    </article>
+                                    <article>
+                                        <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png"
+                                            alt="Experience-icon" title="Experience-icon" class="icon">
+                                        <div>
+                                            <h3>Media Query</h3>
+
+                                        </div>
+                                    </article>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="experience-details-container">
+                        <h2 class="experience-sub-title">Professional Skills</h2>
+                        <div class="article-container">
+
+                            <article>
+                                <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon"
+                                    title="Experience-icon" class="icon">
+                                <div>
+                                    <h3>Creativity</h3>
+
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon"
+                                    title="Experience-icon" class="icon">
+                                <div>
+                                    <h3>Communication</h3>
+
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon"
+                                    title="Experience-icon" class="icon">
+                                <div>
+                                    <h3>Problem Solving</h3>
+
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon"
+                                    title="Experience-icon" class="icon">
+                                <div>
+                                    <h3>Teamwork</h3>
+
+                                </div>
+                            </article>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ######### HTML FOR PROJECT SECTION STARTS HERE ######## -->
+
+    <section class="projects" id="projects" data-aos="fade-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="headers skill-head">
+                        <h2>
+                            Latest <span>Projects</span>
+                        </h2>
+                        <p>
+                            Your Vision, Our Expertise
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-columns allproject">
+
+                        <div class="project card mb-4">
+                            <a href="https://asyn-await-fire-base.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">CRUD APPLICATION</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://media.istockphoto.com/id/2123170386/photo/hands-of-robot-and-human-touch-api-of-global-network-connection-integrating-systems-enabling.jpg?s=1024x1024&w=is&k=20&c=t-1-ZB0SpzSSfb3_oBmPa0cIz_k2qLIjW0ujLmNryNs="
+                                        alt="">
+                                </div>
+                                <div class="card-footer">
+                                    <p>create, read, update and delete
+                                        CRUD is an acronym from the world of computer programming and refers to the four functions considered necessary to implement a persistent storage application: create, read, update and delete.
+
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project card mb-4">
+                            <a href="https://rxjs-mat-node-backened.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">Angular Course</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png"
+                                        alt="Course" title="Course">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Used FiresBase for DB, used HTTPclient for API, used Observable, used angular
+                                        material components like toolbar, sidenav, formfields, snackbar, dialogue,
+                                        button and card, used routing, Implemented edit and update.</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="project card mb-4">
+                            <a href="https://passenger-task-three.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">Passenger Task</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://media.istockphoto.com/id/638482560/photo/tourist-girl-with-backpack-in-international-airport.jpg?s=612x612&w=0&k=20&c=2OczbM8RPhcvSQU9VnxFiZS8p95cynh_77r-y3Jqkds="
+                                        alt="Airlines" title="Airlines">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Used dumy data and transfer data from one component to another component using
+                                        input and output created two different component for passenger list and
+                                        passenger cards.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project card mb-4">
+                            <a href="https://netflix-clone-one-mauve.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">Netflix Clone</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://wallpapers.com/images/hd/netflix-background-6eijmcazwfrb9u6w.jpg"
+                                        alt="Netflix Clone" title="Netflix">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Created by using basic HTML, CSS & JavaScript and used
+                                        jQuery-plugin(owl-Carousel.) with responsive using Media Queries used tmdb API
+                                        key to get trending movie data and tested in postman implemented in this
+                                        project.</p>
+
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project card mb-4">
+                            <a href="https://b4-self.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">Bootstrap4 Layout</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-3075993.jpg&fm=jpg"
+                                        alt="CityLand" title="CityLand">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Created Multiple page layout using Bootstrap4, HTML, CSS & JavaScript and also
+                                        used Owl-Carousel with responsive using Media Queries.</p>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+                        <div class="project card mb-4">
+                            <a href="https://http-materialfirebase2.vercel.app/posts" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">HttpMatFirebase</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://img-b.udemycdn.com/course/750x422/5634404_ec85.jpg" alt="FoodBlog"
+                                        title="FoodBlog">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Used firebase for post data and implemented CRUD used Angular Material components
+                                        also used Bootstrap4.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project card mb-4">
+                            <a href="https://flex-movie-lay-out.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">Flex Layout</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://movie-layout-using-flex.vercel.app/assets/images/bollywood.png"
+                                        alt="">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Created this Movie layout using flex, jQuery-plugin called LightBox with
+                                        responsive using Media Queries.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project card mb-4">
+                            <a href="https://nature-layout-sass.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">SASS Layout</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                                        alt="">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Created this layout Using SASS with animations & responsive using Media Queries.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project card mb-4">
+                            <a href="https://currencycode.vercel.app/" target="_blank">
+                                <div class="card-header">
+                                    <h4 class="m-0">Currency  Converter</h4>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://media.istockphoto.com/id/2137618588/photo/indian-rupee-symbol-with-map-on-stock-market-chart-graph-background.jpg?s=1024x1024&w=is&k=20&c=Dfsgd8dQBmBeDyXOvp2gLAGJzV7bXD35AY4VjQOYgPg="
+                                        alt="">
+                                </div>
+                                <div class="card-footer">
+                                    <p>Done a currency converter application
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ######### HTML FOR CONTACT SECTION STARTS HERE ######## -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 mb-5">
+                    <div class="content text-center text-white">
+                        <h2>Contact Me</h2>
+                        <p>Let's Connect and Create Something Amazing Together!</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6" data-aos="fade-right">
+                    <div class="contactInfo">
+
+                        <div class="boxx">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p> Pankaj Nager , <br>
+                                
+                                    Cidco, Nanded Maharashtra <br>
+                                    431603
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="boxx">
+                            <div class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>
+                                    <a href="tel:+91 9307801085" target="_blank">+91 9307801085</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="boxx">
+                            <div class="icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>
+                                    <a href="mailto:bhosikarsapna732@gmail.com"
+                                        target="_blank">bhosikarsapna732@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="col-12 col-md-6" data-aos="fade-right">
+                    <div class="contactform">
+                        <form>
+                            <h2>Send Message</h2>
+                            <div class="form-group">
+                                <input type="text" name="" required class="form-control">
+                                <span>Fullname</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="" required class="form-control">
+                                <span>Email</span>
+                            </div>
+                            <div class="form-group">
+                                <textarea type="text" name="" rows="4" required class="form-control"></textarea>
+                                <span>Type your Message...</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="" required value="Send" class="btn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ######### HTML FOR FOOTER SECTION STARTS HERE ######## -->
+
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="socialIcons mb-2">
+                        <a href="https://www.linkedin.com/in/sapna-bhosikar" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Bhosikarsapna?tab=repositories" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="footerbottom">
+                        <p class="m-0">Copyright &copy; 2024. All Rights Reserved. Designed and Developed with
+                            Passion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <div class="upbtn" id="upbtn">
+        <i class="fa-solid fa-arrow-up text-white"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ####### jquery ######## -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <!-- ###### bootstrap js ############  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- ###### linked files ###### -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- ######### script main js ########## -->
+    <script src="./assets/js/app.js"></script>
+
+
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
 </html>

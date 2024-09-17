@@ -4,6 +4,7 @@ ul{
 }
 
 
+
 .h-60{
     height: 60%;
 }
@@ -19,5 +20,5 @@ ul{
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
